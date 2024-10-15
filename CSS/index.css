@@ -1,0 +1,54 @@
+body {
+    font-size: 16px;
+    background-color: rgb(204, 235, 195);
+    font-family: Arial, sans-serif; /* add a default font family */
+    padding: 0;
+    margin: 0;
+  }
+  
+  #game-name {
+    text-align: center;
+    font-size: calc(5rem + 1vw); /* use calc() to make the font-size responsive */
+    color: rgb(1, 6, 10);
+  }
+  
+  .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: calc(100vh - 20vh); /* use calc() to make the height responsive */
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  .button {
+    color: white;
+    background-color: rgb(14, 12, 12);
+    padding: 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    background-color: rgb(21, 18, 18);
+  }
+  
+  /* Media queries for different screen sizes */
+  
+  @media only screen and (max-width: 768px) {
+    #game-name {
+      font-size: calc(3rem + 1vw); /* adjust font-size for smaller screens */
+      margin-top: calc(10vh + 20px); /* adjust margin-top for smaller screens */
+    }
+  }
+  
+  @media only screen and (max-width: 480px) {
+    #game-name {
+      font-size: calc(2rem + 1vw); /* adjust font-size for smaller screens */
+      margin-top: calc(5vh + 20px); /* adjust margin-top for smaller screens */
+    }
+  }

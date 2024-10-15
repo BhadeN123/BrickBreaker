@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/info.css" />
+  </head>
+
+  <body>
+    <h1>Game Instructions</h1>
+    <ul>
+      <li>Use Arrow keys (left and right) to move the paddle</li>
+      <li>Press the "Enter" key or click "start Game" to begin playing</li>
+      <li>You hae 3 lives to finish the game</li>
+      <li>Each life comes with a 2 minutes timer</li>
+      <li>The bricks have diffrent colors and diffrent point values.</li>
+      <table style="padding: 20px">
+        <tr>
+          <th>Color</th>
+          <th>Points</th>
+        </tr>
+        <tr>
+          <td>Red</td>
+          <td>10</td>
+        </tr>
+        <tr>
+          <td>White</td>
+          <td>20</td>
+        </tr>
+        <tr>
+          <td>Blue</td>
+          <td>30</td>
+        </tr>
+        <tr>
+          <td>Pink</td>
+          <td>40</td>
+        </tr>
+        <tr>
+          <td>Orange</td>
+          <td>50</td>
+        </tr>
+      </table>
+      <li>If the ball touches the ground u will loose a life</li>
+      <li>Break all the bricks to will the game</li>
+    </ul>
+    <button id="exit" onclick="">X</button>
+    <script>
+      document.getElementById("exit").addEventListener("click", function () {
+        window.location.href = document.referrer;
+        // "http://127.0.0.1:5500/Component1/HTML/index.html";
+      });
+    </script>
+  </body>
+</html>
